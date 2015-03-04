@@ -1,11 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>9</version>
+	</parent>
+
 	<groupId>org.teachingkidsprogramming</groupId>
 	<artifactId>ApprovalTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>ApprovalTests</name>
 	<description>Capturing Human Intelligence - ApprovalTests is an open source assertion/verification library to aid unit testing.</description>
+	<url>https://github.com/TeachingKidsProgramming/ApprovalTests.Java.Maven</url>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,6 +27,13 @@
 		<url>https://github.com/TeachingKidsProgramming/ApprovalTests.Java.Maven.git</url>
 	</scm>
 
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	
 	<developers>
 		<developer>
 			<name>Bhagat Singh</name>
@@ -270,6 +287,7 @@
 			<version>1.1</version>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -289,7 +307,12 @@
 					<show>private</show>
 					<nohelp>true</nohelp>
 				</configuration>
-			</plugin>
+				</plugin>
 		</plugins>
 	</build>
+
+	<organization>
+		<name>Teaching Kids Programming</name>
+		<url>http://teachingkidsprogramming.org/</url>
+	</organization>
 </project>
